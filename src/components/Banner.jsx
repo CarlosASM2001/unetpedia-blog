@@ -6,14 +6,17 @@ function Banner() {
       bg-[url(src/assets/banner7.jpg)] bg-local bg-cover bg-center rounded-2xl"
       style={{
         backgroundSize: "cover",
-        backgroundImage: "linear-gradient(100deg,rgba(82, 77, 77, 1) 0%, rgba(82, 77, 77, 1) 49%, rgba(82, 77, 77, 1) 100%)"
+        backgroundImage: "linear-gradient(100deg,rgba(30, 58, 138, 0.8) 0%, rgba(30, 58, 138, 0.8) 49%, rgba(30, 58, 138, 0.8) 100%)"
       }}
     >
       <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl font-bold">Welcome to Caritas San Cristobal</h1>
-        <p className="m-2 text-2xl ">Join us in making a difference in our community.</p>
-        <button href="#dona" className="bg-gradient-to-r from-red-800 to-red-900
-          py-2 px-3 rounded-md text-white m-5">Dona Aqui
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Step-by-step guide to choosing great font pairs</h1>
+        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+          Discover insights, stories, and knowledge from our community of writers and experts.
+        </p>
+        <button className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600
+          py-3 px-8 rounded-md text-black font-semibold transition-all duration-300 transform hover:scale-105">
+          Read More
         </button>
       </div>
     </div>
