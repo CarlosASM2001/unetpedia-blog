@@ -7,7 +7,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-              About Us
+              Sobre Nosotros
             </h1>
             <p className="text-xl text-gray-600 leading-relaxed">
               Conoce más sobre nuestra misión, visión y el equipo detrás de esta plataforma educativa.

@@ -17,7 +17,7 @@ function Banner() {
           <span className="block text-blue-300">Aprendizaje Académico</span>
         </h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
-          Unet Pedia es una plataforma digital universitaria que transforma la forma en que se gestiona y comparte el material académico
+          UnetPedia es una plataforma digital universitaria que transforma la forma en que se gestiona y comparte el material académico
         </p>
       </div>
     </div>
