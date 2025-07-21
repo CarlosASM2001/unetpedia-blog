@@ -64,16 +64,16 @@ const NoticiasDestacados = () => {
   };
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-white">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Featured Posts
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            <span className="text-navy-900">Noticias</span> Destacadas
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Stay informed with our latest articles, insights, and stories that 
-            matter to our community.
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Mantente informado con nuestros últimos artículos, perspectivas e historias que 
+            importan a nuestra comunidad.
           </p>
         </div>
 
