@@ -6,7 +6,8 @@ import downloadImg from '../assets/download.png';
 import mockup1Img from '../assets/mockup1.png';
 import logoImg from '../assets/logo.png';
 import figmaPostImg from '../assets/figma-post.jpg';
-
+import fase2Img from '../assets/post3cover.jpg';
+import diagrampost3 from '../assets/diagrampost3.png';
 
 
 
@@ -167,6 +168,102 @@ Este logo busca generar identidad visual fuerte, profesional y fácil de reconoc
     destacado: true,
     link: "/noticias/2"
   },
+
+  {
+    id: 3,
+    titulo: "Técnicas de levantamiento de informacion aplicadas al proyecto UnetPedia",
+    descripcion: "En este post, exploramos las técnicas de levantamiento de información utilizadas en el desarrollo del proyecto UnetPedia, incluyendo entrevistas, encuestas y análisis de sistemas existentes.",
+    contenido: `
+# Tecnicas de levantamiento de informacion
+
+## 📌 Fase de Análisis de Requerimientos
+> **"La recolección de requisitos es el proceso de identificar, documentar y analizar las necesidades y 
+expectativas de los interesados en un proyecto"**  
+> *Fuente: [pmoinformatica.com](https://pmoinformatica.com)*
+
+En el ciclo de vida de un proyecto de sistemas, esta fase es clave para:
+- Identificar necesidades de usuarios
+- Documentar funcionalidades del sistema
+- Garantizar comprensión común entre stakeholders
+
+**Referencia bibliográfica:**  
+Capítulos 5 y 6 de Whitten y Bentley:
+- Capítulo 5: Técnicas de exploración de hechos
+- Capítulo 6: Modelado de requerimientos con casos de uso  
+
+---
+
+## 🔍 Técnicas Seleccionadas para el Proyecto UNETPEDIA
+
+### 1. 🎤 Entrevistas (Levantamiento de Información)
+**Definición:**  
+> *"La entrevista es de gran utilidad para obtener información cualitativa [...] un intento sistemático de recoger 
+información de otra persona"*  
+> *Guerra et al., [SG.com.mx](https://sg.com.mx)*
+
+#### 🔧 Implementación Práctica:
+| Etapa | Detalle | Recomendación |
+|-------|---------|---------------|
+| **Preparación** | Investigar contexto institucional | Revisar documentos y procesos actuales |
+| **Participantes** | Enfoque 1. Directivos/Coordinadores 2. Personal operativo | Priorizar por conocimiento del proceso |
+| **Ejecución** | Preguntas abiertas<br>Duración controlada (2-3 hrs) | Grabar sesiones (con consentimiento) |
+
+**Requerimientos identificables:**
+- Tipos de documentos admitidos
+- Permisos y roles de usuario
+- Flujos de trabajo actuales
+- Expectativas de usuarios
+
+---
+
+### 2. 📊 Modelado con Casos de Uso
+**Definición:**  
+Técnica orientada a objetos que describe interacciones entre actores externos y el sistema.
+
+#### 🎭 Actores Identificados:
+Porcentaje de Interacción con el Sistema
+- "Estudiantes" : 35
+- "Administradores" : 20
+
+### 🔄 Casos de Uso Principales:
+
+1. Buscar/Subir/Consultar material (Estudiante)
+2. Validar contenido (Administrador)
+3. Gestionar metadatos (Sistema)
+
+---
+
+### 💡 Beneficios Combinados    
+    
+![Diagrama de Casos de Uso](${diagrampost3})
+
+### Ventajas:
+
+> - 🎯 Precisión: Información directa de usuarios reales
+> - 🏗️ Estructura: Modelado claro de funcionalidades
+> - 🔄 Trazabilidad: Requerimientos → Diseño → Implementación
+
+**Conclusión**: Esta combinación garantiza que el concepto de gestión de materiales 
+académicos se traduzca efectivamente en un sistema funcional y alineado con las necesidades institucionales de la UNET.
+    
+    
+    
+    
+    
+    
+    
+    `,
+    imagen: fase2Img,
+    fecha: "2024-07-21",
+    categoria: "Sistemas de informacion I",
+    autor: "Carlos Serrano",
+    tags: ["Figma", "Prototipo", "UX/UI"], 
+    destacado: true,
+    link: "/noticias/3" 
+  },
+
+
+
 ];
 
 // Funciones para acceder a los datos
