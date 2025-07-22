@@ -257,7 +257,7 @@ académicos se traduzca efectivamente en un sistema funcional y alineado con las
     fecha: "2024-07-21",
     categoria: "Sistemas de informacion I",
     autor: "Carlos Serrano",
-    tags: ["Figma", "Prototipo", "UX/UI"], 
+    tags: ["Sistema de Informacion", "Tecnicas", "Levantamiento de informacion", "UNET"], 
     destacado: true,
     link: "/noticias/3" 
   },
