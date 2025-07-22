@@ -1,4 +1,5 @@
 import React from 'react';
+import bannerImg from '../assets/banner.png';
 
 const About = () => {
   return (
@@ -34,7 +35,7 @@ const About = () => {
             </div>
             <div>
               <img
-                src="/src/assets/banner.png"
+                src={bannerImg}
                 alt="Our team"
                 className="rounded-xl shadow-lg w-full h-80 object-cover"
               />

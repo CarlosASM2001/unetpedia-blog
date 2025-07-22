@@ -1,4 +1,7 @@
 import React from "react";
+import bannerImg from '../assets/banner.png';
+
+
 function Banner() {
   return (
     <div
@@ -7,7 +10,7 @@ function Banner() {
         backgroundSize: "cover",
         backgroundImage: `
           linear-gradient(90deg, rgba(15,23,42,0.9) 0%, rgba(30,41,59,0.8) 50%, rgba(15,23,42,0.9) 100%),
-          url('/src/assets/banner.png')
+          url('${bannerImg}')
         `
       }}
     >

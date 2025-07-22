@@ -1,5 +1,9 @@
 import React from 'react';
 import { Linkedin, Github, Mail, MapPin, Award, Users } from 'lucide-react';
+import carlosProfile from '../assets/carlosprofile.jpg';
+import santiagoProfile from '../assets/santiagoprofile.jpg';
+import yosmelProfile from '../assets/yosmelprofile.jpg';
+import jesusProfile from '../assets/jesusprofile.jpg';
 
 const TeamSection = () => {
   const teamMembers = [
@@ -8,7 +12,7 @@ const TeamSection = () => {
       name: "Carlos Alfredo Serrano Molina",
       role: "Desarrollador",
       description: "Estudiante de Ingenieria en Informatica",
-      image: "/src/assets/carlosprofile.jpg", // Replace with actual image path
+      image: carlosProfile, // Replace with actual image path
       skills: ["React", "Node.js", "Tailwind CSS","Flutter"],
       social: {
         linkedin: "https://ve.linkedin.com/",
@@ -23,7 +27,7 @@ const TeamSection = () => {
       name: "Santiago Andres Gutierrez Prato",
       role: "Desarrollador",
       description: "Estudiante de Ingenieria en Informatica",
-      image: "/src/assets/santiagoprofile.jpg",
+      image: santiagoProfile,
       skills: ["Frontend", "Flutter", "API Design", "Firebase"],
       social: {
         linkedin: "https://ve.linkedin.com/",
@@ -38,7 +42,7 @@ const TeamSection = () => {
       name: "Yosmel Jose Vaca Mendez",
       role: "Desarrollador",
       description: "Estudiante de Ingenieria en Informatica",
-      image: "/src/assets/yosmelprofile.jpg", 
+      image: yosmelProfile, 
       skills: ["Figma", "SQL", "User Research"],
       social: {
         linkedin: "https://ve.linkedin.com/",
@@ -53,7 +57,7 @@ const TeamSection = () => {
       name: "Jesus Abraham Sanchez Ortiz",
       role: "Desarrollador",
       description: "Estudiante de Ingenieria en informatica",
-      image: "/src/assets/jesusprofile.jpg",
+      image: jesusProfile,
       skills: ["Frontend", "Flutter", "React"],
       social: {
         linkedin: "https://ve.linkedin.com/",
