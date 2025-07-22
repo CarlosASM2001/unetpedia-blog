@@ -9,7 +9,7 @@ import Post from './components/Post.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/unetpedia-blog"> 
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
