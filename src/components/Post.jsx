@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Calendar, ArrowLeft } from 'lucide-react';
+import ReactMarkDown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { noticiasData } from '../data/noticiasData.js';
 
 const Post = () => {
@@ -84,13 +86,46 @@ const Post = () => {
 
           {/* Post content */}
           <div className="prose prose-lg max-w-none">
-            <div className="text-gray-700 leading-relaxed text-lg">
-              {post.contenido.split('\n').map((paragraph, index) => (
-                <p key={index} className="mb-6">
-                  {paragraph}
-                </p>
-              ))}
+            <div className="text-gray-700 leading-relaxed text-lg markdonw-content">
+              <ReactMarkDown
+                remarkPlugins={[remarkGfm]} 
+                components={{
+                  h1: ({children}) => <h1 className="text-3xl font-bold text-gray-800 mb-6 mt-8">{children}</h1>,
+                  h2: ({children}) => <h2 className="text-2xl font-semibold text-gray-800 mb-4 mt-6">{children}</h2>,
+                  h3: ({children}) => <h3 className="text-xl font-semibold text-gray-800 mb-3 mt-5">{children}</h3>,
+                  p: ({children}) => <p className="mb-g leading-relaxed">{children}</p>,
+                  ul: ({children}) => <ul className="list-disc list-inside mb-6 space-y-2">{children}</ul>,
+                  ol: ({children}) => <ol className="list-decimal list-inside mb-6 space-y-2">{children}</ol>,
+                  li: ({children}) => <li className="ml-4">{children}</li>,
+                  blockquote: ({children}) => 
+                    <blockquote className="border-l-4 border-blue-300 pl-4 italic text-gray-600 mb-6 bg-gray-50 py-2">
+                      {children}
+                    </blockquote>,
+
+                  code: ({inline,children}) => 
+                    inline
+                    ? <code className="bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono">{children}</code>
+                    : <pre className="block bg-gray-100 text-gray-800 p-4 text-sm font-mono rounded-lg overflow-x-auto mb-6">
+                        <code>{children}</code>
+                      </pre>,
+                  pre: ({children}) => 
+                    <pre className="bg-gray-100 text-gray-800 p-4 rounded-lg overflow-x-auto mb-6">
+                      <code>{children}</code>
+                    </pre>,
+                  a: ({href, children}) => <a className='text-blue-600 hover:underline' href={href} target="_blank" rel="noopener noreferrer">{children}</a>,
+                  img: ({src, alt}) => <img src={src} alt={alt} className="rounded-lg shadow-md mb-6 w-auto h-auto" />,
+                  table: ({children}) => <table className="min-w-full bg-white border border-gray-200 rounded-lg shadow-md mb-6">{children}</table>,
+                  th: ({children}) => <th className="px-6 py-3 border-b border-gray-200 bg-gray-50 text-left text-sm font-semibold text-gray-700">{children}</th>,
+                  td: ({children}) => <td className="px-6 py-4 border-b border-gray-200 text-sm text-gray-700">{children}</td>,
+                  strong: ({children}) => <strong className="font-semibold text-gray-800">{children}</strong>,
+                  em: ({children}) => <em className="italic text-gray-600">{children}</em>,
+                  hr: () => <hr className="my-8 border-gray-200" />
+                }}
+                >
+                {post.contenido}
+              </ReactMarkDown> 
             </div>
+          
           </div>
 
           {/* Tags */}
