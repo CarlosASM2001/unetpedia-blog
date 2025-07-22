@@ -1,4 +1,13 @@
 
+import fase1Img from '../assets/fase1.jpg';
+import principalImg from '../assets/principal.png';
+import mycoursesImg from '../assets/Mycourses.png';
+import editaccountImg from '../assets/editaccount.png';
+import downloadImg from '../assets/download.png';
+import mockup1Img from '../assets/mockup1.png';
+import logoImg from '../assets/logo.png';
+import figmaPostImg from '../assets/figma-post.jpg';
+
 // Data structure for noticias (news) in the application
 export const noticiasData = [
   {
@@ -38,7 +47,7 @@ integral a esta problemática.
 
 
 `,
-    imagen: "/src/assets/fase1.jpg",
+    imagen: fase1Img,
     fecha: "2025-07-02",
     autor: "Carlos Serrano",
     categoria: "Sistemas de Informacion I",
@@ -59,7 +68,7 @@ permitiendo un acceso rapido y ordenado a las funciones claves
 
 ## 🧠 Proyect
 
-![Pantalla Principal](/src/assets/principal.png)
+![Pantalla Principal](${principalImg})
 
 > **Bienvenida personalizada y acceso directo a funcionalidades clave**
 >
@@ -69,7 +78,7 @@ permitiendo un acceso rapido y ordenado a las funciones claves
 
 ## 📚 My Courses
 
-![Mis Cursos](/src/assets/Mycourses.png)
+![Mis Cursos](${mycoursesImg})
 
 > **Interfaz de búsqueda y exploración de materias**
 >
@@ -83,7 +92,7 @@ permitiendo un acceso rapido y ordenado a las funciones claves
 
 ## 👤 Profile
 
-![Perfil de Usuario](/src/assets/editaccount.png)
+![Perfil de Usuario](${editaccountImg})
 
 > **Pantalla de edición de perfil del usuario**
 >
@@ -96,7 +105,7 @@ permitiendo un acceso rapido y ordenado a las funciones claves
 
 ## ⬇️ Download
 
-![Descarga de Materiales](/src/assets/download.png)
+![Descarga de Materiales](${downloadImg})
 
 > **Confirmación para descarga de material**
 >
@@ -134,10 +143,10 @@ Todo el diseño se centró en facilitar la lectura y la interacción desde dispo
 El prototipo fue revisado por miembros del equipo y compañeros para recoger sugerencias. 
 Se realizaron mejoras en el contraste, espaciado y disposición de secciones para una mejor experiencia de usuario.
 
-![Prototipo Interactivo](/src/assets/mockup1.png)
+![Prototipo Interactivo](${mockup1Img})
 
 # Decision del Logo
-![Logo Unet Pedia](/src/assets/logo.png)
+![Logo Unet Pedia](${logoImg})
 
 El logo de Unet Pedia está inspirado en el emblema institucional de la UNET, integrando líneas geométricas que representan la tecnología, el conocimiento estructurado y la conexión académica.
 
@@ -148,7 +157,7 @@ Este logo busca generar identidad visual fuerte, profesional y fácil de reconoc
 
 
 `,
-    imagen: "/src/assets/figma-post.jpg",
+    imagen: figmaPostImg,
     fecha: "2024-07-11",
     autor: "Carlos Serrano",
     categoria: "Multimedia I",
