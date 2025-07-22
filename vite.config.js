@@ -10,5 +10,5 @@ export default defineConfig({
     tailwindcss()
   ],
 
-  base: "/Unetpedia-blog",
+  base: "/unetpedia-blog",
 })
