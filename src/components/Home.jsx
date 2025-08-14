@@ -26,7 +26,7 @@ const Home = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
               <BookOpen className="w-8 h-8 text-blue-600 mx-auto mb-3" />
               <h3 className="text-2xl font-bold text-gray-800">{totalPosts}</h3>
@@ -38,13 +38,8 @@ const Home = () => {
               <p className="text-gray-600">Carreras Cubiertas</p>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
-              <TrendingUp className="w-8 h-8 text-purple-600 mx-auto mb-3" />
-              <h3 className="text-2xl font-bold text-gray-800">500+</h3>
-              <p className="text-gray-600">Recursos Disponibles</p>
-            </div>
-            <div className="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-shadow duration-300">
               <Calendar className="w-8 h-8 text-orange-600 mx-auto mb-3" />
-              <h3 className="text-2xl font-bold text-gray-800">2024</h3>
+              <h3 className="text-2xl font-bold text-gray-800">2025</h3>
               <p className="text-gray-600">Año de Lanzamiento</p>
             </div>
           </div>
@@ -56,13 +51,6 @@ const Home = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
             <h2 className="text-3xl font-bold text-gray-800">Últimas Publicaciones</h2>
-            <Link 
-              to="/blog" 
-              className="flex items-center space-x-2 text-blue-600 hover:text-blue-800 font-medium transition-colors duration-300"
-            >
-              <span>Ver todos los artículos</span>
-              <ArrowRight className="w-4 h-4" />
-            </Link>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

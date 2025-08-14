@@ -16,11 +16,7 @@ function Banner() {
       }}
     >
       {/* Animated background particles */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-ping"></div>
-        <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-blue-300 rounded-full animate-pulse"></div>
-        <div className="absolute top-1/2 left-3/4 w-1.5 h-1.5 bg-blue-500 rounded-full animate-ping"></div>
-      </div>
+
 
       <div className="container mx-auto text-center relative z-10">
         {/* Main heading */}
@@ -64,21 +60,9 @@ function Banner() {
             <span>Conoce más sobre UnetPedia</span>
             <ArrowRight className="w-5 h-5" />
           </Link>
-          <Link 
-            to="/blog" 
-            className="inline-flex items-center space-x-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 border border-white/30 hover:border-white/50"
-          >
-            <BookOpen className="w-5 h-5" />
-            <span>Explorar Blog</span>
-          </Link>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
-          </div>
-        </div>
+        
       </div>
     </div>
   );
